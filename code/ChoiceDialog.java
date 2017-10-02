@@ -43,7 +43,7 @@ public class ChoiceDialog extends JDialog {
 			}
 		});
 		container.add(jb3);
-		JButton jb4=new JButton("两个单词间的最短路径");
+		JButton jb4=new JButton("两个单词间的最短路 ");
 		jb4.addActionListener(new ActionListener() {
 			
 			@Override
