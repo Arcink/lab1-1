@@ -13,7 +13,7 @@ public class generateDialog extends JDialog {
 		Container container=getContentPane();
 		container.setLayout(new GridLayout(2, 1));
 		
-		JLabel inputLabel=new JLabel("请输入源文本",JLabel.CENTER);
+		JLabel inputLabel=new JLabel("请输入源文本 ",JLabel.CENTER);
 		JTextArea inputText=new JTextArea();
 		JButton generate=new JButton("转换");
 		

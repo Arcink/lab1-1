@@ -181,7 +181,7 @@ public class Graph {
 				format="No bridge words from \""+word1+"\" to \""+word2+"\"!";
 			}
 		}else if(list.size()==1){
-			format="The bridge wor from \""+word1+"\""+" to \""+word2+"\" is: "+list.get(0);
+			format="The bridge words from \""+word1+"\""+" to \""+word2+"\" is: "+list.get(0);
 		}else {
 			format="The bridge words from \""+word1+"\""+" to \""+word2+"\" are: ";
 			for(int i=0;i!=list.size();i++) {
