@@ -10,7 +10,7 @@ class Node  {
 	Node(String s){vertex=new String(s);}
 }
 public class Graph {	
-	final int MAX_SIZE=100;
+	final int MAX_SIZE=150;
 	List<Node> adjacencyList=new LinkedList<Node>();
 	Map<String,Integer> strIndex=new HashMap<String,Integer>();
 	List<String>pathMark=new LinkedList<String>();
