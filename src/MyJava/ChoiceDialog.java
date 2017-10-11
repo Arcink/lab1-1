@@ -8,8 +8,7 @@ public class ChoiceDialog extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2L;
-    int git=1;
+	private static final long serialVersionUID = 4L;
 	public ChoiceDialog(Graph graph) {
 		Container container=getContentPane();
 		container.setLayout(new GridLayout(5, 1,10,10));

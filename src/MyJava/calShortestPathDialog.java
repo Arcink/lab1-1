@@ -10,8 +10,7 @@ public class calShortestPathDialog extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2L;
-    int git=1;
+	private static final long serialVersionUID = 4L;
 	public calShortestPathDialog(Graph graph){
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout(20,20));
