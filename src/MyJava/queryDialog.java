@@ -10,7 +10,7 @@ public class queryDialog extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4L;
 	public queryDialog(Graph graph) {
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout(20,20));

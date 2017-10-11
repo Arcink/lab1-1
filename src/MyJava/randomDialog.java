@@ -75,6 +75,7 @@ class randThread extends Thread{
 }
 @SuppressWarnings("serial")
 public class randomDialog extends JDialog {
+    private static final long serialVersionUID = 4L;
 	static int flag=1;
 	randThread rth=null;
 	public randomDialog(Graph graph) {

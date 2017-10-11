@@ -11,7 +11,7 @@ public class showGraphDialog extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4L;
 	public showGraphDialog()  {
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout());
