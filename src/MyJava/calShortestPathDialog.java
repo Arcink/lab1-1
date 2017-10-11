@@ -16,11 +16,11 @@ public class calShortestPathDialog extends JDialog {
 		container.setLayout(new BorderLayout(20,20));
 		JPanel jp=new JPanel();
 		jp.setLayout(new GridLayout(1, 4));
-		JLabel wordLabel1=new JLabel("请输入源单词");
+		JLabel wordLabel1=new JLabel("请输入源单词:");
 		jp.add(wordLabel1);
 		JTextField wordName1=new JTextField();
 		jp.add(wordName1,CENTER_ALIGNMENT);
-		JLabel wordLabel2=new JLabel("请输入目的单词");
+		JLabel wordLabel2=new JLabel("请输入目的单词:");
 		jp.add(wordLabel2);
 		JTextField wordName2=new JTextField();
 		jp.add(wordName2,LEFT_ALIGNMENT);
