@@ -8,7 +8,7 @@ public class generateDialog extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4L;
 	public generateDialog(Graph graph) {
 		Container container=getContentPane();
 		container.setLayout(new GridLayout(2, 1));
