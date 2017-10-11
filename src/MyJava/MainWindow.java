@@ -13,6 +13,7 @@ public class MainWindow extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+    int git=1;
 	public MainWindow() {
 		Container container=getContentPane();
 		container.setLayout(null);
