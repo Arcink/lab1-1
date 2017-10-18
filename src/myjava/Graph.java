@@ -28,7 +28,7 @@ public class Graph {
     public Node randEnd = null;
 
     public Graph(String fileName) throws IOException {
-        Creat_adjacencyList(fileName);
+        creatAdjacencyList(fileName);
     }
 
     private List<String> readText(String fileName) throws IOException {
@@ -63,7 +63,7 @@ public class Graph {
         return list;
     }
 
-    private void Creat_adjacencyList(String fileName) throws IOException {
+    private void creatAdjacencyList(String fileName) throws IOException {
         List<String> list = readText(fileName);
         int count = 0;
         for (int i = 0; i != list.size(); i++) {
@@ -183,7 +183,7 @@ public class Graph {
         return format.toString();
     }
 
-    void Initialize_path() {
+    void initializePath() {
         pathMark.clear();
         for (int i = 0; i != visit.length; i++)
             visit[i] = 0;
@@ -284,7 +284,7 @@ public class Graph {
             for (int i = 0; i != adjacencyList.size(); i++) {
                 String temp = adjacencyList.get(i).vertex;
                 if (!temp.equals(word1)) {
-                    Initialize_path();
+                    initializePath();
                     dfs(shortestPathMartix, word1, temp);
                     List<String> list2 = new LinkedList<String>();
                     list2.addAll(this.path);
