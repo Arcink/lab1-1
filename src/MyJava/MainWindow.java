@@ -9,9 +9,6 @@ import java.io.IOException;
 import javax.swing.*;
 
 public class MainWindow extends JFrame {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public MainWindow() {
 		Container container=getContentPane();

@@ -7,9 +7,6 @@ import java.awt.event.ActionListener;
 import java.util.List;
 
 public class calShortestPathDialog extends JDialog {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 2L;
 	public calShortestPathDialog(Graph graph){
 		Container container=getContentPane();

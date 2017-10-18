@@ -7,9 +7,6 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class queryDialog extends JDialog {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public queryDialog(Graph graph) {
 		Container container=getContentPane();

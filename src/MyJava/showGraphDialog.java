@@ -8,9 +8,6 @@ import java.awt.Toolkit;
 import javax.swing.*;
 
 public class showGraphDialog extends JDialog {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public showGraphDialog()  {
 		Container container=getContentPane();
