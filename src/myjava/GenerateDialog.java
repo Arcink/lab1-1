@@ -1,12 +1,12 @@
-package MyJava;
+package myjava;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class generateDialog extends JDialog {
+public class GenerateDialog extends JDialog {
 	private static final long serialVersionUID = 1L;
-	public generateDialog(Graph graph) {
+	public GenerateDialog(Graph graph) {
 		Container container=getContentPane();
 		container.setLayout(new GridLayout(2, 1));
 		

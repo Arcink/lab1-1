@@ -1,4 +1,4 @@
-package MyJava;
+package myjava;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

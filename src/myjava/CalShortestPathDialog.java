@@ -1,4 +1,4 @@
-package MyJava;
+package myjava;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
-public class calShortestPathDialog extends JDialog {
+public class CalShortestPathDialog extends JDialog {
 	private static final long serialVersionUID = 2L;
-	public calShortestPathDialog(Graph graph){
+	public CalShortestPathDialog(Graph graph){
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout(20,20));
 		JPanel jp=new JPanel();

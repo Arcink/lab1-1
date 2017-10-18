@@ -1,4 +1,4 @@
-package MyJava;
+package myjava;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,7 +17,7 @@ public class ChoiceDialog extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				graph.showDirectedGraph();
-				new showGraphDialog();
+				new ShowGraphDialog();
 			}
 		});
 		JButton jb2=new JButton("查询桥接词");
@@ -27,7 +27,7 @@ public class ChoiceDialog extends JDialog {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				new queryDialog(graph);
+				new QueryDialog(graph);
 			}
 		});
 		JButton jb3=new JButton("根据桥接词生成新文本");
@@ -36,7 +36,7 @@ public class ChoiceDialog extends JDialog {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				new generateDialog(graph);
+				new GenerateDialog(graph);
 			}
 		});
 		container.add(jb3);
@@ -46,7 +46,7 @@ public class ChoiceDialog extends JDialog {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				new calShortestPathDialog(graph);
+				new CalShortestPathDialog(graph);
 			}
 		});
 		container.add(jb4);
@@ -56,7 +56,7 @@ public class ChoiceDialog extends JDialog {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				new randomDialog(graph);
+				new RandomDialog(graph);
 			}
 		});
 		container.add(jb5);

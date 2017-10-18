@@ -1,4 +1,4 @@
-package MyJava;
+package myjava;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -7,9 +7,9 @@ import java.awt.Toolkit;
 
 import javax.swing.*;
 
-public class showGraphDialog extends JDialog {
+public class ShowGraphDialog extends JDialog {
 	private static final long serialVersionUID = 1L;
-	public showGraphDialog()  {
+	public ShowGraphDialog()  {
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout());
 		JLabel jl=new JLabel();

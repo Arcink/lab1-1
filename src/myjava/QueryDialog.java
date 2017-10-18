@@ -1,4 +1,4 @@
-package MyJava;
+package myjava;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -6,9 +6,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class queryDialog extends JDialog {
+public class QueryDialog extends JDialog {
 	private static final long serialVersionUID = 1L;
-	public queryDialog(Graph graph) {
+	public QueryDialog(Graph graph) {
 		Container container=getContentPane();
 		container.setLayout(new BorderLayout(20,20));
 		JPanel jp=new JPanel();
