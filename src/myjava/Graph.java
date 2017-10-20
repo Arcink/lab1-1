@@ -113,7 +113,8 @@ public class Graph {
         word1 = word1.toLowerCase();
         word2 = word2.toLowerCase();
         List<String> list = new LinkedList<String>();
-        String format = new String();
+        // String format = new String();
+        StringBuilder format = new StringBuilder();
         Iterator<Node> iter = adjacencyList.iterator();
         Node temp = null;
         Node temp1 = null;
@@ -146,23 +147,52 @@ public class Graph {
         }
         if (list.size() == 0) {
             if (flag1 == 0 && flag2 == 0) {
-                format = "No \"" + word1 + "\" and \"" + word2 + "\" in the graph!";
+                //format = "No \"" + word1 + "\" and \"" + word2 + "\" in the graph!";
+                format.append("No \"");
+                format.append(word1);
+                format.append( "\" and \"");
+                format.append(word2);
+                format.append("\" in the graph!");
             } else if (flag1 == 0) {
-                format = "No \"" + word1 + "\" in the graph!";
+                // format = "No \"" + word1 + "\" in the graph!";
+                format.append("No \"");
+                format.append(word1);
+                format.append("\" in the graph!");
             } else if (flag2 == 0) {
-                format = "No \"" + word2 + "\" in the graph!";
+                // format = "No \"" + word2 + "\" in the graph!";
+                format.append("No \"");
+                format.append(word2);
+                format.append("\" in the graph!");
             } else {
-                format = "No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!";
+                // format = "No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!";
+                format.append("No bridge words from \"");
+                format.append(word1);
+                format.append( "\" and \"");
+                format.append(word2);
+                format.append("\"!");
             }
         } else if (list.size() == 1) {
-            format = "The bridge words from \"" + word1 + "\"" + " to \"" + word2 + "\" is: " + list.get(0);
+            // format = "The bridge words from \"" + word1 + "\"" + " to \"" + word2 + "\" is: " + list.get(0);
+            format.append("The bridge words from \"");
+            format.append(word1);
+            format.append( "\" to \"");
+            format.append(word2);
+            format.append("\" is: ");
+            format.append(list.get(0));
         } else {
-            format = "The bridge words from \"" + word1 + "\"" + " to \"" + word2 + "\" are: ";
+            // format = "The bridge words from \"" + word1 + "\"" + " to \"" + word2 + "\" are: ";
+            format.append("The bridge words from \"");
+            format.append(word1);
+            format.append( "\" to \"");
+            format.append(word2);
+            format.append("\" are: ");
             for (int i = 0; i != list.size(); i++) {
-                format += list.get(i) + " ";
+                // format += list.get(i) + " ";
+                format.append(list.get(i));
+                format.append(" ");
             }
         }
-        list.add(0, format);
+        list.add(0, format.toString());
         return list;
     }
 
